@@ -1,0 +1,42 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Num9 {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		
+		System.out.println("Escribe el número que quieras que se convierta en años y en dias: " );
+		
+		String numeroMinutos = br.readLine();
+			double numMin = Double.parseDouble(numeroMinutos);
+			
+			
+		String numeroAnos = br.readLine();
+			double numAnos = Double.parseDouble(numeroAnos);
+			
+			double ResultadoAnos = (numMin / numAnos);
+			
+				int minutosEnAno = 60 * 24 * 365;
+			
+			System.out.println("El reultado en años es: " + ResultadoAnos + "Años");
+			
+		String numeroDias = br.readLine();
+			double numDias = Double.parseDouble(numeroDias);
+			
+			
+			
+			
+			
+		System.out.println("El numero elegido son: " );
+		
+		
+
+	}
+
+}

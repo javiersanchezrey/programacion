@@ -1,0 +1,168 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Ejercicios {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		//Ejercicio 1.
+		
+		System.out.println("Escribe dos numeros para compararlos:");
+		
+		double numero1 = Double.parseDouble(br.readLine());
+		double numero2 = Double.parseDouble(br.readLine());
+		
+		if(numero1 > numero2) {
+			System.out.println("El numero 1 es mayor");
+		} else if(numero1 < numero2) {
+			System.out.println("El numero 2 es mayor.");
+		} else {
+			System.out.println("Los numeros son iguales.");
+		}
+		
+		//Fin Ejericio 1.
+		
+		//Ejercicio 2
+					System.out.println();
+					
+			System.out.println("Podrias escribir un numero para identificar si es positivo, negativo o 0.");
+		double numero3 = Double.parseDouble(br.readLine());
+		
+		if(numero3 < 0) {
+			System.out.println("El número es Negativo.");
+		} else if (numero3 > 0) {
+			System.out.println("El número es Positivo");
+		} else {
+			System.out.println("El número es 0.");
+		}
+					
+		//Fin Ejercicio 2
+	
+		
+		//Ejercicio 3
+				System.out.println();
+		
+		System.out.println("Escribe un número y el programa te indicará si es par o impar.");		
+				
+		int numero4 = Integer.parseInt(br.readLine());
+		
+		if (numero4 %2 == 0) {
+			System.out.println("El numero es Par.");
+		} else {
+			System.out.println("El numero es Impar.");
+		}
+		
+		//Fin Ejercicio 3
+		
+		
+		//Ejercicio 4
+				System.out.println();
+				
+		System.out.println("Podrias escribir dos numero para hacer la división de los mismos.");
+		
+		int numero1Div = Integer.parseInt(br.readLine());
+		int numero2Div = Integer.parseInt(br.readLine());
+		
+		
+		
+		if(numero2Div == 0) {
+			System.out.println("No se puede dividir entre 0 BOBO.");
+		}  else {
+			int resultado = numero1Div / numero2Div;
+			System.out.println("El resultado de la división es: " + resultado);
+		}
+		
+		//Fin Ejercicio 4
+		
+		//Ejercicio 5
+				System.out.println("Intruduce por favor el nombre de usuario y contraseña:");
+		
+		String nombre = br.readLine();
+			String alumno = nombre;
+			
+		String contraseña = br.readLine();
+			String daw1programacion = contraseña;
+		
+			if (nombre.equals(alumno) && (contraseña.equals(daw1programacion))) {
+				System.out.println("Has entrado al sistema");
+			} else  {
+				System.out.println("Usuario o Contraseña equivocada.");
+			}
+			
+		
+		//Fin ejercicio 5
+			
+		//Ejercicio 8
+		
+		int ano = Integer.parseInt(br.readLine());
+		
+		if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+			System.out.println("El año es Bisiesto.");
+		} else {
+			System.out.println("El año no es bisiesto");
+		}
+			
+		//Fin ejercicio 8.
+		
+		//Ejrcicio 17
+				
+				System.out.println("Indica el tiempo de la llamada, el día en el que hizo la llamada y el turno.");
+		int tiempoLlamada = Integer.parseInt(br.readLine());
+		
+		int euros = tiempoLlamada * 1;
+		
+		double euros2 = (tiempoLlamada * 1) + (tiempoLlamada * 0.80);
+		
+		double euros3 = (tiempoLlamada * 1) + (tiempoLlamada * 0.80) + (tiempoLlamada * 0.70);
+		
+		double euros4 = (tiempoLlamada * 1) + (tiempoLlamada * 0.80) + (tiempoLlamada * 0.70) + (tiempoLlamada * 0.50);
+		
+		double eurosPorcentaje = euros * 0.03;
+		
+		double eurosPorcentaje2 = euros2 * 0.03;
+		
+		double eurosPorcentaje3 = euros3 * 0.03;
+		
+		double eurosPorcentaje4 = euros4 * 0.03;
+		
+		if (tiempoLlamada < 5) {
+			System.out.println("Se le cobrarán :" + euros + " Euros, por el tiempo de la llamada");
+		} if (tiempoLlamada > 5 && tiempoLlamada < 8 ) {
+			System.out.println("Se le cobrarán : " + euros2 + " Euros, por el tiempo de la llamada.");
+		} if (tiempoLlamada > 8 && tiempoLlamada < 10) {
+			System.out.println("Se le cobrarán : " + euros3 + " Euros, por el tiempo de la llamada.");
+		} if (tiempoLlamada > 10) {
+			System.out.println("Se le cobrarán : " + euros4 + " Euros, por el tiempo de la llamada.");
+		}
+		
+		System.out.println("Indica el dia de la semana en el que hiciste la llamada.");
+		
+		String diaSemana = br.readLine();
+			String Domingo = diaSemana;
+		
+		if (diaSemana.equals(Domingo)) {
+			System.out.println("Los Domingo se cobrá un 3% de impuesto extra, por lo que ahora se te cobrará : " + eurosPorcentaje);
+		} else {
+			System.out.println("¿En que turno hiciste la llamada, Turno de Mañana o Turno de Tarde?");
+		}
+		
+		String TurnodeMañana = br.readLine();
+			String TurnoMañana = TurnodeMañana;
+		String TurnodeTarde = br.readLine();
+			String TurnoTarde = TurnodeTarde;
+		
+		if (diaSemana.equals(TurnoMañana)) {
+			System.out.println("Se te está cobrando un 15% de impuestos por el turno de mañana.");
+		} if (diaSemana.equals(TurnoTarde)) {
+			System.out.println("Se te está cobrando un 10% de impuestos por el turno de tarde.");
+		}
+		
+		
+				
+	}
+
+}

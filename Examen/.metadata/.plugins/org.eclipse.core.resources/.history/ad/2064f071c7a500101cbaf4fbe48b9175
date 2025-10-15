@@ -1,0 +1,45 @@
+package Examen;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Programa1Examen {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("¿Podías escribir el nombre del concursante?");
+	 String nombreConcursante = br.readLine();
+	 
+	 	System.out.println("¿Podías escribir cuál es el año en el que nacio?");
+	 String añoNacimiento = br.readLine();
+	 
+	 	System.out.println("¿El concusante ha sido expulsado?");
+	 char expulsion = br.readLine().toLowerCase().charAt(0);
+	 
+	 boolean expulsado;
+	 
+	 if (expulsion == 'n') {
+		 expulsado = true;
+	 } else {
+		 expulsado = false;
+	 }
+	 
+	 
+	 
+	 	System.out.println("¿Cuál es la puntuación media que ha tenido?");
+	 double puntuacionMedia = Double.parseDouble(br.readLine());
+	 
+	 	System.out.println("El concursante ha sido guardado correctamente.");
+	 	
+	 System.out.println("¿Quieres ver las características del concursante guardado?");
+	 char concursanteGuardado = br.readLine().toLowerCase().charAt(0);
+	 
+	  if (concursanteGuardado == 's') {
+		  System.out.println( nombreConcursante +  "," + añoNacimiento + "," + expulsion +  "," + puntuacionMedia);
+	  }
+
+	}
+
+}

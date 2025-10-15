@@ -1,0 +1,60 @@
+package defaul;
+
+public class HolaMundo {
+
+	public static void main(String[] args) {  
+	  System.out.println("Me llamo Juan Pérez. \nTengo 20 años. \nVivo en Salamanca.");
+	  
+	  
+	  byte numeroPequeño = 1;
+	  	System.out.println("Un numero pequeño es " + numeroPequeño);
+	  
+	  double poblaciónEspaña = 47000000;
+	  System.out.println("La población de España es " + poblaciónEspaña);
+	  
+	  float altura = 1.74f;
+	  System.out.println("Mi altura es " + altura);
+	  
+	  
+	  long sol = 150000000;
+	  System.out.println("Distanci al sol es " + sol);
+	  
+	  double café = 1.50;
+	  System.out.println("El precio de un café es " + café);
+	  
+	  
+	  
+	  
+	  System.out.println(" /\\");	
+	  System.out.println(" / \\") ;
+	  System.out.println("/   \\");
+	  System.out.println("|    |");
+	  System.out.println("| () |");
+	  System.out.println("|____|");
+	    System.out.println();
+	  
+	    
+	    
+	  
+	  
+	  
+	 
+	  
+	  
+	  int a= 10;		int b = 20;
+	  
+	  boolean variableA = true;
+	  boolean variableB = false;
+	  
+	  
+	  System.out.println(a > b);
+	  
+	  System.out.println(b > a);
+	  
+	  System.out.println(a != b);
+	  
+	  System.out.println(a >= b);
+	  
+	}
+
+}

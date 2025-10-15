@@ -1,0 +1,55 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Ejercicios2 {
+
+	public static void main(String[] args) throws IOException {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+			//Ejercicio 1
+			
+			System.out.println("Escribe el nombre de la película que quieres ver:");
+			
+		String Pelicula = br.readLine();
+		
+			System.out.println("¿Cuantos años tienes?");
+		int edad = Integer.parseInt(br.readLine());
+		
+			System.out.println("La pelicula es para mayores de 18? ");
+		char mayorEdad = br.readLine().toLowerCase().charAt(0);
+		
+			System.out.println("Tienes permiso de tus padres para ver la pelicula?");
+		char permiso = br.readLine().toLowerCase().charAt(0);
+		
+		if(edad < 13 && mayorEdad == 's' && permiso == 'n') {
+			System.out.println("Lo siento no puedes ver esta pelicula");
+	
+		} else if(edad > 13 && edad < 17 && mayorEdad == 'n' && permiso == 'n') {
+			System.out.println("No puedes ver la pelicula.");
+			
+		} else if (edad >13 && edad < 17 && mayorEdad == 's' && permiso == 'S') {
+			System.out.println("Puedes ver la pelicula.");
+			
+		} else
+			System.out.println("Puedes ver la pelicula.");
+		
+		
+		//Ejercicio 2
+		
+		System.out.println("Escriba una contraseña, que debe llevar como minimo 8 letras, un numero y al menos una mayuscula.");
+		
+		String contraseña = br.readLine();
+		
+		int numero = Integer.parseInt(br.readLine());
+		
+		char mayuscula = br.readLine().charAt(0);
+		
+		contraseña = contraseña.length(0,7) + numero + mayuscula;
+		
+	}
+	
+
+}

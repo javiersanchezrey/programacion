@@ -1,0 +1,40 @@
+package Ejercicios;
+
+public class EjerciciosOperadores {
+
+	public static void main(String[] args) {
+			//Ejercicio 1.
+		
+		double num1 = 23.56;
+		double num2 = 7660.78;
+		
+		double resultado = num1 +num2;
+		
+		System.out.println("El resultado de esta suma es: " + resultado);
+		
+		//Ejercicio 2.
+		
+		int lado1 = 6;
+		int lado2 = 6;
+		
+		int Área = lado1 * lado2;					System.out.println(Área);
+		
+		int Perimetro = 4 * lado1;					System.out.println(Perimetro);
+		
+		//Ejercicio 3.
+		
+		int base = 6;
+		int altura = 9;
+		
+		int Superficie = base * altura;					System.out.println(Superficie);
+		
+		int Perímetro = 2 * (base + altura);					System.out.println(Perímetro);
+		
+		//Ejercicio 4.
+		
+		int gradosCentígrados = 26;						System.out.println((9/5 * gradosCentígrados) + 32);
+		
+		
+	}
+
+}

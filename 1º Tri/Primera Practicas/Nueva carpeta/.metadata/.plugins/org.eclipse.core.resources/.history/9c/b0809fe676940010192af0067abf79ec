@@ -1,0 +1,29 @@
+package defaul;
+
+public class HolaMundo {
+
+	public static void main(String[] args) {  
+	  System.out.println("Me llamo Juan Pérez. /n Tengo 20 años.");
+	  
+
+	  
+	  System.out.println("Vivo en Salamanca.");
+	  
+	  
+	  byte numeroPequeño = 1;
+	  double poblaciónEspaña = 47000000;
+	  float altura = 1.74f;
+	  
+	  long sol = 150000000;
+	  
+	  double café = 1.50;
+	  
+	  boolean
+	  
+	  
+	  
+	  
+	  
+	}
+
+}

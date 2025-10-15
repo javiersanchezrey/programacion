@@ -1,0 +1,294 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Ejercicios {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		//Ejercicio 1.
+		
+		System.out.println("Escribe dos numeros para compararlos:");
+		
+		double numero1 = Double.parseDouble(br.readLine());
+		double numero2 = Double.parseDouble(br.readLine());
+		
+		if(numero1 > numero2) {
+			System.out.println("El numero 1 es mayor");
+		} else if(numero1 < numero2) {
+			System.out.println("El numero 2 es mayor.");
+		} else {
+			System.out.println("Los numeros son iguales.");
+		}
+		
+		//Fin Ejericio 1.
+		
+		//Ejercicio 2
+					System.out.println();
+					
+			System.out.println("Podrias escribir un numero para identificar si es positivo, negativo o 0.");
+		double numero3 = Double.parseDouble(br.readLine());
+		
+		if(numero3 < 0) {
+			System.out.println("El número es Negativo.");
+		} else if (numero3 > 0) {
+			System.out.println("El número es Positivo");
+		} else {
+			System.out.println("El número es 0.");
+		}
+					
+		//Fin Ejercicio 2
+	
+		
+		//Ejercicio 3
+				System.out.println();
+		
+		System.out.println("Escribe un número y el programa te indicará si es par o impar.");		
+				
+		int numero4 = Integer.parseInt(br.readLine());
+		
+		if (numero4 %2 == 0) {
+			System.out.println("El numero es Par.");
+		} else {
+			System.out.println("El numero es Impar.");
+		}
+		
+		//Fin Ejercicio 3
+		
+		
+		//Ejercicio 4
+				System.out.println();
+				
+		System.out.println("Podrias escribir dos numero para hacer la división de los mismos.");
+		
+		int numero1Div = Integer.parseInt(br.readLine());
+		int numero2Div = Integer.parseInt(br.readLine());
+		
+		
+		
+		if(numero2Div == 0) {
+			System.out.println("No se puede dividir entre 0 BOBO.");
+		}  else {
+			int resultado = numero1Div / numero2Div;
+			System.out.println("El resultado de la división es: " + resultado);
+		}
+		
+		//Fin Ejercicio 4
+		
+		//Ejercicio 5
+				System.out.println("Intruduce por favor el nombre de usuario y contraseña:");
+		
+		String nombre = br.readLine();
+			String alumno = "alumno";
+			
+		String contraseña = br.readLine();
+			String daw1programacion = "daw1programacion";
+		
+			if (nombre.equals(alumno) && (contraseña.equals(daw1programacion))) {
+				System.out.println("Has entrado al sistema");
+			} else  {
+				System.out.println("Usuario o Contraseña equivocada.");
+			}
+			
+		//Fin ejercicio 5
+			
+		//ejercicio 6
+			
+				System.out.println("Escribe tre numeros para saber cual de ellos es mayor:");
+			
+			int num11 = Integer.parseInt(br.readLine());
+			int num22 = Integer.parseInt(br.readLine());
+			int num33 = Integer.parseInt(br.readLine());
+			
+			if(num11> num22 && num11 > num33) {
+				System.out.println("El numero 1 es mayor que los otros dos.");
+			} if (num22 > num11 && num22 > num33) {
+				System.out.println("El num 2 es mayor");
+			} if (num33 > num11 && num33 > num22) {
+				System.out.println("El num 3 es mayor");
+			}
+
+		//fin ejercicio 6
+			
+		//Ejercicio 7
+			
+			
+			
+		//Final ejercicio 7
+			
+		//Ejercicio 8
+				System.out.println("Escribe un año para saber si es bisiesto.");
+		int ano = Integer.parseInt(br.readLine());
+		
+		if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+			System.out.println("El año es Bisiesto.");
+		} else {
+			System.out.println("El año no es bisiesto");
+		}
+			
+		//Fin ejercicio 8.
+		
+		
+		//ejercico 9
+			System.out.println("Introduce el saldo que tienes en tu cuenta corriente: ");
+			
+			double saldo = Double.parseDouble(br.readLine());
+			
+			if (saldo <= 1000000) {
+				double interes = saldo * 0.05;
+				
+					System.out.println("Lo que has gando de Interés es: " + interes);
+				}if (saldo > 1000001 && saldo < 2000000) {
+					double interes2 = saldo * 0.07;
+						System.out.println("Lo que has gando de Interés es: " + interes2);
+			}if (saldo > 2000001 && saldo < 5000000) {
+				double interes3 = saldo * 0.08;
+				System.out.println("Lo que has gando de Interés es: " + interes3);
+				}if (saldo> 5000000) {
+					double interes4 = saldo * 0.09;
+					System.out.println("Lo que has gando de Interés es: " + interes4);
+				}
+		
+		//fin ejercicio 9
+		
+		
+		//ejercico 10
+			
+			System.out.println("Escriba tres numero para que se le muestren ordenados del mas pequeño al mas grande.");
+			
+			int num1 = Integer.parseInt(br.readLine());
+			int num2 = Integer.parseInt(br.readLine());
+			int num3 = Integer.parseInt(br.readLine());
+
+		if(num1 > num2 && num1 >num3) {
+			if(num2>num3) {
+				System.out.println("El numero más grande es el numero " + num1 + " el segunda mas grande es " + num2 + " y el menor es " + num3);
+			}else {
+				System.out.println("Sería " + num1 + num3 + num2);
+			}
+		}else if (num2>num1 && num2>num3) {
+			if (num3>num1) {
+				System.out.println(" los numero van: " + num2 + num3 + num1);
+			}
+		}else if (num3>num2 && num3>num1){
+			if (num1>num2)
+			System.out.println("Los numeros van: " + num3 + num1 + num2);
+		}
+		
+		//fin ejercicio 10
+		
+		
+		//ejercicio 11
+		
+		System.out.println("Podrias darme los 3 lados de un triangulo para decirte el tipo de triangulo que és:");
+		
+		double lado1 = Double.parseDouble(br.readLine());
+		double lado2 = Double.parseDouble(br.readLine());
+		double lado3 = Double.parseDouble(br.readLine());
+		
+		if (lado1 == lado2 && lado2 == lado3) {
+			System.out.println("El triangulo es equilatero");
+		} else if ((lado1 == lado2 && lado1 != lado3 && lado2 != lado3) || (lado2 == lado3 && lado1 != lado3 && lado1 != lado2) || (lado3 == lado1 && lado2 != lado1 && lado2 != lado3)) {
+			System.out.println("El triangulo es Isosceles");
+		} else {
+			System.out.println("El triangulo es Escaleno");
+		}
+		
+		//Fin ejercicio 11
+		
+		//Ejercicio 12
+		
+			System.out.println("Dime tu fecha de nacimiento completa y te dire que horoscopo eres:");
+			
+		int dia = Integer.parseInt(br.readLine());
+		String  mes =br.readLine();
+		
+		if(mes.equalsIgnoreCase("Enero")) {
+			if(dia<21) {
+				System.out.println("Eres Capricornio.");
+			}else
+					System.out.println("Eres Acuario.");
+			}if(mes.equalsIgnoreCase("Febrero")) {
+				if(dia<19) {
+					System.out.println("Eres Acuario.");
+				}else
+						System.out.println("Eres Piscis.");
+				}if(mes.equalsIgnoreCase("Marzo")) {
+					if(dia<20) {
+						System.out.println("Eres Piscis.");
+					}else
+							System.out.println("Eres Aries.");
+					}
+			
+		
+		//fin ejercicio 12
+		
+		
+		//Ejercicio 14.
+				
+				System.out.println("Precio Inicial por Kilo: ");
+			double PrecioInicial = Double.parseDouble(br.readLine());
+			
+				System.out.println("Tipo de Uva (A/B): ");
+			char tipo = br.readLine().charAt(0);
+			
+				System.out.println("Tamaño 1/2; ");
+			int tamaño = Integer.parseInt(br.readLine());
+			
+				System.out.println("Kilos por Uva :");
+			double kilos = Double.parseDouble(br.readLine());
+			
+			double precioFinal = 0;
+			
+			if (tipo == 'A') {
+				if (tamaño == 1)
+					precioFinal = PrecioInicial + 0.20;
+				else if (tamaño == 2)
+					precioFinal = PrecioInicial + 0.30;
+			}else if (tipo == 'B') {
+				if (tamaño == 1) {
+					precioFinal = PrecioInicial - 0.30;
+					
+					System.out.println(" Tipo B, Tamaño 1, -0.30 ");
+				}else if (tamaño == 2)
+					precioFinal = PrecioInicial - 0.50;
+				
+					System.out.println("Tipo B, Tamaño 1, -0.50 ");
+			}
+		
+	double ganancia = precioFinal * kilos;
+		System.out.println("Precio final = " + precioFinal);
+		System.out.println("Ganancia final: " + ganancia + " €");
+		
+		//Ejericio 18
+				System.out.println();
+				
+		System.out.println("Introduce el año de nacimiento:");
+		
+		int añoNacimiento = Integer.parseInt(br.readLine());
+			
+		int edad = 2025-añoNacimiento;
+			boolean puedeSalir = false;
+			
+		if (edad >= 15 && edad <= 18) {
+			System.out.println("¿Autorización de los Padres? Si No");
+				char autorizacionFirmada = br.readLine().charAt (0);
+				
+				if (autorizacionFirmada == 'S' || autorizacionFirmada == 'N') {
+					puedeSalir = true;
+				}
+		}else if (edad >= 18) {
+			puedeSalir = true;
+		}
+		
+		System.out.println( nombre + " , " + edad + " años, ¿Puede salir fuera? " + );
+		
+		//Fin Ejercicio 18
+		
+				
+	}
+
+}

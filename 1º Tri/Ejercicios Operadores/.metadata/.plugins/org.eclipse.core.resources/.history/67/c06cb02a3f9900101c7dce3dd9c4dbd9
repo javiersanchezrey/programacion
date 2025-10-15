@@ -1,0 +1,80 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class EjerciciosOperadores {
+
+	public static void main(String[] args) throws IOException {
+			//Ejercicio 1.
+		System.out.println();
+		
+		double num1 = 23.56;
+		double num2 = 7660.78;
+		
+		double resultado = num1 +num2;
+		
+		System.out.println("El resultado de esta suma es: " + resultado);
+		
+		
+		//Ejercicio 2.
+		System.out.println();
+		
+		int lado1 = 6;
+		int lado2 = 6;
+		
+		int Área = lado1 * lado2;					System.out.println(Área);
+		
+		int Perimetro = 4 * lado1;					System.out.println(Perimetro);
+		
+		
+		//Ejercicio 3.	
+		System.out.println();
+		
+		int base = 6;
+		int altura = 9;
+		
+		int Superficie = base * altura;					System.out.println(Superficie);
+		
+		int Perímetro = 2 * (base + altura);					System.out.println(Perímetro);
+		
+		
+		//Ejercicio 4.
+		System.out.println();
+		
+		int gradosCentígrados = 26;						System.out.println(("El resultado ha pasao de Centigrados a Farenheid: "+   9/5 * gradosCentígrados) + 32);
+		
+		
+		//Ejercicio 5.
+		System.out.println();
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		
+		System.out.println("Necesito tu peso: ");
+		double peso = Double.parseDouble(br.readLine());
+		
+		System.out.println(peso);
+		
+		System.out.println("Necesito tu altura: ");
+		
+		String alturaIMC = br.readLine();
+			double altura1 = Double.parseDouble(alturaIMC);
+		
+		double IMC = peso / (altura1 * 2);					System.out.println("Tu Índice de Masa Corporal es " + IMC);
+		
+		
+		//Ejercicio 6
+		
+		double Pi = 3.1415;
+		double radio2 = 5;
+		
+		double areaCirculo = Pi * radio2;					System.out.println("El Área del circulo es: " + areaCirculo);
+		
+		double alturaCirculo = 7.56;
+		
+		double circunferencia = Pi * radio2 * radio2 * alturaCirculo;				System.out.println(circunferencia);
+	}
+
+}

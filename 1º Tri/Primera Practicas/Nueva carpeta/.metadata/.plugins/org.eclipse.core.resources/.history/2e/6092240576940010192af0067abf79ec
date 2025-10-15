@@ -1,0 +1,38 @@
+package defaul;
+
+public class HolaMundo {
+
+	public static void main(String[] args) {  
+	  
+	  int año = 2025;
+	  
+	  System.out.println("Estamos en " + año);
+	  
+	  byte numerouno = 25;
+	  byte numerodos = 5;
+	  double numerotres = 32.75	;
+	  
+	  System.out.println("La suma de estos numeros es " + numerouno / numerodos * numerotres);
+	  
+	  System.out.println();
+	  
+	  boolean variablebooleana;
+	  boolean variablebooleana2;
+	  boolean variablebooleana3;
+	  boolean variablebooleana4;
+	  boolean variablebooleana5;
+	  boolean variablebooleana6;
+	  
+	  variablebooleana = true;
+	  variablebooleana2 = false;
+	  variablebooleana3 = true;
+	  variablebooleana4 = false;
+	  variablebooleana5 = true;
+	  variablebooleana6 = true;
+
+	  
+	  
+	  System.out.println( variablebooleana && variablebooleana2 && variablebooleana3 && variablebooleana4 );
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\alumnofp\Desktop\Programación\Ejercicios Operadores\.metadata\.plugins\org.eclipse.jdt.core
+4176528116.index
+1865797976.index
+2595673804.index

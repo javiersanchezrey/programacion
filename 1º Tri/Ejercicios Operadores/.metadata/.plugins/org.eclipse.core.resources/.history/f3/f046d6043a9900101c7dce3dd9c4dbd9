@@ -1,0 +1,20 @@
+package Ejercicios;
+
+public class EjerciciosOperadores {
+
+	public static void main(String[] args) {
+			//Ejercicio 1.
+		
+		double num1 = 23.56;
+		double num2 = 7660.78;
+		
+		double resultado = num1 +num2;
+		
+		System.out.println("El resultado de esta suma es: " + resultado);
+		
+		//Ejercicio 2.
+		
+		
+	}
+
+}

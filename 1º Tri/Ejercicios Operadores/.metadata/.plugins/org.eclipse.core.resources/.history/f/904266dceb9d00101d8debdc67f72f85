@@ -1,0 +1,37 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Num9 {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+					
+				
+				System.out.println();
+				
+				System.out.println("Añada tu nombre de Usuario:");
+					String nombreUsuario = br.readLine();
+					
+				System.out.println("Añade tu año de Nacimiento:");
+					String añoNacimiento = br.readLine();
+					
+				System.out.println("Añade tu color favorito");
+					String colorFav = br.readLine();
+					
+				String contraseña = (nombreUsuario.substring(0,3).toUpperCase()) + (añoNacimiento.substring(4,6).toUpperCase()) + (colorFav.substring(0).toLowerCase()) + (Math.floor(Math.random()* 100) + 1);	
+			
+			System.out.println("La contraseña es: " + contraseña);
+			
+			
+			
+			
+		
+		
+
+	}
+
+}

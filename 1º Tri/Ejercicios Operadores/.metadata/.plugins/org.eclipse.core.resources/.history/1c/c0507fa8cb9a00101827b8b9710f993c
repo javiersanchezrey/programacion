@@ -1,0 +1,175 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class EjerciciosOperadores {
+
+	public static void main(String[] args) throws IOException {
+		
+			//Ejercicio 1.
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("Necesito que escribas dos numeros: ");
+			
+			
+			double num1 = Double.parseDouble(br.readLine());
+			
+			double num2 =Double.parseDouble(br.readLine());
+			
+			double resultado = num1 +num2;
+		
+		System.out.println("El resultado de esta suma es: " + resultado);
+		
+		
+		//Ejercicio 2.
+		System.out.println("Introduce 2 numeros:");
+		
+		int lado1 ;
+		int lado2 ;
+		
+		lado1 = Integer.parseInt(br.readLine());
+		lado2 = Integer.parseInt(br.readLine());
+		
+		int Área = lado1 * lado2;					System.out.println(Área);
+		
+		int Perimetro = 4 * lado1;					System.out.println(Perimetro);
+		
+		
+		//Ejercicio 3.	
+		System.out.println();
+		
+		int base = 6;
+		int altura = 9;
+		
+		int Superficie = base * altura;					System.out.println(Superficie);
+		
+		int Perímetro = 2 * (base + altura);					System.out.println(Perímetro);
+		
+		
+		//Ejercicio 4.
+		System.out.println();
+		
+		int gradosCentígrados = 26;						System.out.println(("El resultado ha pasao de Centigrados a Farenheid: "+   9/5 * gradosCentígrados) + 32);
+		
+		
+		//Ejercicio 5.
+		System.out.println();
+		
+		System.out.println("Necesito tu peso: ");
+		double peso = Double.parseDouble(br.readLine());
+		
+		System.out.println(peso);
+		
+		System.out.println("Necesito tu altura: ");
+		
+		String alturaIMC = br.readLine();
+			double altura1 = Double.parseDouble(alturaIMC);
+		
+		double IMC = peso / (altura1 * 2);					System.out.println("Tu Índice de Masa Corporal es " + IMC);
+		
+		
+		//Ejercicio 6
+		
+		System.out.println();
+		
+		
+		double radio2 = 5;
+		
+		double areaCirculo = Math.PI * radio2;					System.out.println("El Área del circulo es: " + areaCirculo);
+		
+		double circunferencia = 2 * Math.PI * radio2;				System.out.println(circunferencia);
+		
+		
+		//Ejercicio 7
+		
+		System.out.println();
+		
+		double alturaCirculo = 7.56;
+		
+		double volumen = Math.PI * radio2 * radio2 * alturaCirculo;				System.out.println(volumen);
+		
+		double área = 2 * Math.PI * radio2 * alturaCirculo;						System.out.println(área);
+		
+		
+		//Ejercicio 8
+		
+		System.out.println();
+		
+		int pesoLibras = 120;
+		double pesoKilos = pesoLibras * 0.3545;
+		
+			System.out.println("Tu peso en Libras es 120 y en kilos será : " + pesoKilos);
+			
+			
+		//Ejercicio 9
+				System.out.println();
+				
+			System.out.println("Escribe un numero para que se convierta en Meses y Dias: " );
+		
+			
+			String entrada = br.readLine();
+			
+		long minutos = Long.parseLong(entrada);
+		
+			int minutosEnAno = 60 * 24 * 365;
+		
+		long meses = (minutos / minutosEnAno);
+		
+		long dias = ((minutos / 60 / 24) / 365);
+		
+		System.out.println("El numero que has seleccionado da : " + meses + " meses.");
+			
+		System.out.println("El numero que has seleccionado da : " + dias + " dias.");
+		
+		
+		//Ejercicio 10
+				System.out.println();
+		
+		System.out.println("Podrias dar una distancia en kilometros.");
+		
+			String entrada10 = br.readLine();
+			
+		int kilometros = Integer.parseInt(entrada10);
+		
+		long metros = kilometros / 1000;
+		
+		long centrimetros = kilometros / 100000;
+		
+		double millas = kilometros * 0.621371;
+		
+		System.out.println("Los resultados obtenidos son: " + metros + " metros " + centrimetros + " centimetros y " + millas + " millas.");
+			
+				
+		//Ejercicio 11.
+			System.out.println();
+			
+		System.out.println("Podrias escribir dos numeros, se cual sea: ");
+		
+			double num3 ;
+			double num4 ;
+						
+		System.out.println("Introduce un numero: ");
+		
+		String entrada11 = br.readLine();
+		
+			num3 = Double.parseDouble(entrada11);
+		
+		System.out.println("Introduce el otro: ");
+		
+			String entrada12 = br.readLine();
+		
+			num4 = Double.parseDouble(entrada12);
+			
+		double suma = num3 + num4;				double resta = num3 - num4;			double mult = num3 * num4;			double div = num3 / num4;
+			
+		System.out.println("Los resultados son: " + "Resultado de la suma: " + suma + "Resultado de la resta: " + resta + "Resultado de la mult: " + mult + "Resultado de la división: " + div );
+		
+		
+		
+		
+	}
+
+}
+

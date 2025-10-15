@@ -1,0 +1,104 @@
+package defaul;
+
+public class HolaMundo {
+
+	public static void main(String[] args) {  
+	  System.out.println("Me llamo Juan Pérez. \nTengo 20 años. \nVivo en Salamanca.");
+	  
+	  
+	  byte numeroPequeño = 1;
+	  	System.out.println("Un numero pequeño es " + numeroPequeño);
+	  
+	  double poblaciónEspaña = 4700000;
+	  System.out.println("La población de España es " + poblaciónEspaña);
+	  
+	  float altura = 1.74f;
+	  System.out.println("Mi altura es " + altura);
+	  
+	  long sol = 150000000;
+	  System.out.println("Distanci al sol es " + sol);
+	  
+	  double café = 1.50;
+	  System.out.println("El precio de un café es " + café);
+	  
+	  String miNombre = "Javier Sánchez Rey";
+	  
+	  System.out.println("Mi nombre completo es " + miNombre);
+	  
+	  char letras = 'J';
+	  
+	  System.out.println(letras - 5);
+	  
+	  //Ejercicio 8
+
+	  int a= 10;		int b = 20;
+	  
+	  
+	  System.out.println(a > b);
+	  
+	  System.out.println(b > a);
+	  
+	  System.out.println(a != b);
+	  
+	  System.out.println(a >= b);
+	  
+	  //Ejercicio 9
+
+	  String nombre = "Javier";
+	  String apellido = " Sánchez";
+	  String apellido2 = " Rey";
+	  
+	  String aficion = "me gusta ir al cine";
+	  
+	  	
+	  System.out.println("Mi nombre es " + nombre + apellido + apellido2 + "\nuna de mis aficiones es " + aficion );
+	  
+	  System.out.println("Mi nombre es " + nombre + apellido + apellido2 + "\nuna de mis aficiones es " + aficion .length());
+	  
+	  
+	  System.out.println("Programar en Java es Divertido." .replace("Java", "Python"));
+	  
+	  
+	  System.out.println("Programar en Java es Divertido." .length());
+	  
+	  
+	  System.out.println("Programar en Java es Divertido." .toUpperCase());
+	  
+	  
+	  //Ejercicio 10
+	  
+	  int variable1 = 15;
+	  
+	  int variable2 = 8;
+	  
+	  System.out.println(variable1 + variable2 );
+	  
+	  System.out.println(variable1 - variable2 );
+	  
+	  System.out.println(variable1 * variable2 );
+	  
+	  System.out.println(variable1 / variable2 );
+	  
+	  //Ejercicio 11
+
+	  double ancho = 5.5;
+	  double alto = 3.2;
+	  
+	  
+	  
+	  double Area = alto * ancho;
+	  
+	  double perimetro = 2*(ancho + alto);
+	  
+	  
+	  
+	  System.out.println(Area);
+	  
+	  System.out.println(perimetro);
+
+	  
+	  
+	  
+	}
+
+}

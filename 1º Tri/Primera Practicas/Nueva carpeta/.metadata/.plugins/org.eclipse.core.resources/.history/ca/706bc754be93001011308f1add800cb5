@@ -1,0 +1,20 @@
+package defaul;
+
+public class HolaMundo {
+
+	public static void main(String[] args) {  
+	  
+	  int año = 2025;
+	  
+	  System.out.println("Estamos en " + año);
+	  
+	  int numerouno = 25;
+	  int numerodos = 5;
+	  float numerotres = 32.75	;
+	  
+	  System.out.println("La suma de estos numeros es " + numerouno / numerodos * numerotres);
+	  
+	  
+	}
+
+}

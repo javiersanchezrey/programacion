@@ -1,0 +1,52 @@
+package ej;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class ej {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println();
+		
+		System.out.println("Introduce el Nombre del Videojuego.");
+		
+		String nombreVidejuego = br.readLine();
+		
+		
+			System.out.println("Escriba la primera nota: ");
+		double nota1 = Double.parseDouble(br.readLine());
+		
+			System.out.println("Escriba la segunda nota: ");
+		double nota2 = Double.parseDouble(br.readLine());
+		
+		
+		double nota3 =  Math.random() * 10; 
+		
+		double notaMedia = (nota1 + nota2 + nota3) /3;
+		
+		String nombreDig = nombreVidejuego.substring(0,3);
+		
+			if (nota1 >= 1 && nota1<=10) {
+				System.out.println("La primera nota del Vieojuego es: " + nota1);
+			}else {
+				System.out.println("No se pueden dar esos dígitos como nota.");
+			}
+			
+			if (nota2 >= 1 && nota2<=10) {
+				System.out.println("La primera nota del Vieojuego es: " + nota2);
+			}else {
+				System.out.println("No se pueden dar esos dígitos como nota.");
+			}
+			
+			System.out.println("La nota 1 es: " + nota1);
+			System.out.println("La nota 2 es: " + nota2);
+			System.out.println("La nota 3 es: " + nota3);
+		
+		System.out.println("La nota media es: " + notaMedia);
+		
+		System.out.println("El nombre abreviado es: " + nombreDig);
+	}
+	
+		}
+

@@ -1,0 +1,35 @@
+package ej;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class ej {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("Escribe una fecha:");
+		
+		int dia = Integer.parseInt(br.readLine());
+		int mes = Integer.parseInt(br.readLine());
+		int año = Integer.parseInt(br.readLine());
+		
+		
+		
+		if (año <= 2025) {
+			
+			if (mes >= 1 && mes <= 12) {
+					
+				if (mes == 2 && dia >= 1 && dia <= 28) {
+				
+				}else if ((mes == 3 && dia >= 1 && dia <= 31) || (mes == 4 && dia >= 1 && dia <= 30) || (mes == 5 && dia >= 1 && dia <= 31) || (mes == 6 && dia >= 1 && dia <= 30)) {
+					System.out.println("El día introducido es incorrecto.");
+				} 
+			} else {
+				System.out.println("El mes introducido es incorrecto.");
+			}
+				System.out.println("La fecha que has introducido es: " + dia + " / " + mes + " / "+ año);
+		}
+
+	}
+
+}

@@ -1,0 +1,100 @@
+package Ejercicios;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ejercicio9 {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("¿Cuál es el consumo mensual que has tenido?");
+	int kw = Integer.parseInt(br.readLine());
+	
+		System.out.println("¿Tienes una tarifa nocturna contratada?");
+	char tarifaNocturna = br.readLine().toLowerCase().charAt(0);
+	
+		System.out.println("¿Eres un cliente con una antiguedad superior a 5 años?");
+	char antiguedad = br.readLine().toLowerCase().charAt(0);
+	
+	double coste = 0;
+	
+	double costeFinal = 0;
+	
+	double costeAntiguedad = 0;
+	
+		if (kw <= 100 && tarifaNocturna == 'n' && antiguedad == 'n') {
+			coste = kw * 0.10;
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw >= 101 && kw <= 300 && tarifaNocturna == 'n' && antiguedad == 'n') {
+			coste = (kw - 100)* 0.15;
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw >= 301 && kw <= 500 && tarifaNocturna == 'n' && antiguedad == 'n') {
+			coste = (100*0.10) + (199*0.15) + ((kw - 300)* 0.20);
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw > 500 && tarifaNocturna == 'n' && antiguedad == 'n') {
+			coste = (100*0.10) + (199*0.15) + (199*0.20) + ((kw - 400)* 0.25);
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		}
+		
+		//Tarifa nocturna
+		
+		if (kw <= 100 && tarifaNocturna == 's' && antiguedad == 'n') {
+			coste = kw * 0.10;
+		costeFinal = coste -(coste*0.15);
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw >= 101 && kw <= 300 && tarifaNocturna == 's' && antiguedad == 'n') {
+			coste = (kw - 100)* 0.15;
+		costeFinal = coste - (coste*0.15);
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw >= 301 && kw <= 500 && tarifaNocturna == 's' && antiguedad == 'n') {
+			coste = (100*0.10) + (199*0.15) + ((kw - 300)* 0.20);
+		costeFinal = coste - (coste*0.15);
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw > 500 && tarifaNocturna == 's' && antiguedad == 'n') {
+			coste = (100*0.10) + (199*0.15) + (199*0.20) + ((kw - 400)* 0.25);
+		costeFinal = coste - (coste*0.15);
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste + " se te queda en " + costeFinal + " por el descuento.");
+		
+		}
+		
+		//Antiguedad
+		
+		if (kw <= 100 && tarifaNocturna == 's' && antiguedad == 's') {
+			coste = kw * 0.10;
+		costeFinal = coste -(coste*0.15);
+		costeAntiguedad = costeFinal - 5;
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw >= 101 && kw <= 300 && tarifaNocturna == 's' && antiguedad == 's') {
+			coste = (kw - 100)* 0.15;
+		costeFinal = coste - (coste*0.15);
+		costeAntiguedad = costeFinal - 5;
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw >= 301 && kw <= 500 && tarifaNocturna == 's' && antiguedad == 's') {
+			coste = (100*0.10) + (199*0.15) + ((kw - 300)* 0.20);
+		costeFinal = coste - (coste*0.15);
+		costeAntiguedad = costeFinal - 5;
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		} else if (kw > 500 && tarifaNocturna == 's' && antiguedad == 's') {
+			coste = (100*0.10) + (199*0.15) + (199*0.20) + ((kw - 400)* 0.25);
+		costeFinal = coste - (coste*0.15);
+		costeAntiguedad = costeFinal - 5;
+		System.out.println("El coste por " + kw + " kilowatios, es de " + coste);
+		
+		}
+		
+		
+	}
+
+}
